@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  sgbd-db:
+    image: postgres:latest
+    ports:
+      - "5434:5432" # Map external port 5434 to internal PostgreSQL port 5432
+    environment:
+      POSTGRES_DB: mydb          # The default database
+      POSTGRES_USER: myuser      # The database user
+      POSTGRES_PASSWORD: mypassword # The user's password
+    networks:
+      - madicke
+
+networks:
+  madicke:
+    # No need for driver unless you want a custom network
