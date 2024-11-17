@@ -16,13 +16,13 @@ export class AuthSignUpDto {
   @IsString()
   @IsNotEmpty()
   mot_de_passe: string;
+  // @IsString()
+  // @IsNotEmpty()
+  // prenom: string;
   @IsString()
   @IsNotEmpty()
-  prenom: string;
-  @IsString()
-  @IsNotEmpty()
-  nom: string;
-  @IsString()
-  @IsNotEmpty()
-  role: string;
+  name: string;
+  // @IsString()
+  // @IsNotEmpty()
+  // role: string;
 }
