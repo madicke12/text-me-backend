@@ -32,9 +32,9 @@ export class AuthService {
         data: {
           email: dto.email,
           mot_de_passe: hash,
-          Prenom: dto.prenom,
-          nom: dto.nom,
-          role: dto.role,
+          // Prenom: dto.prenom,
+          name: dto.name,
+          // role: dto.role,
         },
       });
 
